@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colour"
+  >
+ 
+   
+     
+     
+     <RelativeLayout
+        android:background="@drawable/topbgimage"
+        android:id="@+id/toplayout"
+        android:layout_height="wrap_content" 
+        android:layout_width="fill_parent" >
+        
+         
+          <Button
+    	    android:id="@+id/grpscrn_backbtn"
+    	    android:layout_width="35dp"
+    	    android:layout_height="30dp"
+    	    android:background="@drawable/back1"
+    	    android:layout_alignParentLeft="true"
+    	    android:layout_margin="5dp"
+    	    />
+       <TextView 
+            android:id="@+id/grpscrn_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:text="Phone App"
+            android:layout_centerInParent="true"/>
+
+       <ImageView
+           android:id="@+id/sysmind_grpscrn_imageView"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentTop="true"
+           android:layout_toLeftOf="@+id/grpscrn_logout_btn"          
+            android:gravity="center_vertical"
+           android:layout_marginTop="3dp"
+           android:src="@drawable/sysmind_icon" />
+
+       <Button
+           android:id="@+id/grpscrn_logout_btn"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentRight="true"
+           android:layout_alignParentTop="true"
+           android:gravity="center_vertical"
+           android:layout_marginTop="2dp"
+           android:textColor="@color/colour"
+           android:text="@string/Logout" />
+       
+       </RelativeLayout>
+
+     
+     <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+      <EditText android:id="@+id/inputSearchGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search User"
+        android:layout_marginTop="60dp"
+        android:inputType="textVisiblePassword"/>
+     
+     <ListView
+         android:id="@+id/sysmind_grpscrn_listview"
+         android:layout_width="match_parent"
+         android:layout_height="350dp"
+        
+         android:layout_marginBottom="10dp" >
+     </ListView>
+     </LinearLayout>
+ 
+</RelativeLayout>

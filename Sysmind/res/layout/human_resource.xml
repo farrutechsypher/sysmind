@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+   
+    android:background="#F8F8F8"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/image_logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#224088"
+            android:padding="5dip"
+            android:src="@drawable/logo" />
+
+        <ImageView
+            android:id="@+id/image_department"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#FE0001"
+            android:padding="5dip"
+            android:src="@drawable/department_top" />
+
+        <ImageView
+            android:id="@+id/human_resource"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dip"
+            android:src="@drawable/human_resource" />
+
+        <ImageView
+            android:id="@+id/account_manager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dip"
+            android:src="@drawable/acount_manager" />
+
+        <ImageView
+            android:id="@+id/finance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dip"
+            android:padding="10dp"
+            android:src="@drawable/finance" />
+
+        
+    </LinearLayout>
+
+</LinearLayout>

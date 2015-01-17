@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colour" >
+
+    <!-- <RelativeLayout
+        android:id="@+id/toplayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/topbgimage" >
+
+        <Button
+            android:id="@+id/empl_profpg_backbtn"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/back1" />
+
+        <TextView
+            android:id="@+id/empl_profpg_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:text="Add Group"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/empl_profpg_imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/empl_profpg_backbtn"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/sysmind_icon" />
+    
+    </RelativeLayout> -->
+<RelativeLayout
+        android:id="@+id/toplayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/topbgimage" >
+
+        <Button
+            android:id="@+id/empl_profpg_backbtn"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/back1" />
+
+
+      <TextView
+            android:id="@+id/empl_profpg_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:text="Add Group"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/empl_profpg_imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="3dp"
+            android:layout_toLeftOf="@+id/group_logout_btn"
+            android:gravity="center_vertical"
+            android:src="@drawable/sysmind_icon" />
+
+        <Button
+            android:id="@+id/group_logout_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="2dp"
+            android:gravity="center_vertical"
+            android:text="@string/Logout"
+            android:textColor="@color/CornflowerBlue" />
+    </RelativeLayout>
+    <EditText
+        android:id="@+id/add_grp_name_editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toplayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="88dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/add_grp_name_button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_grp_name_editText1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="76dp"
+         android:textColor="@color/CornflowerBlue"
+        android:text="Add Group Name" />
+
+    </RelativeLayout>

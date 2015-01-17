@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F8F8F8"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/include"
+            layout="@layout/sysmind_background" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <EditText
+                android:id="@+id/regpg_username"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="10dp"
+                android:background="#D5D6D7"
+                android:drawableRight="@drawable/username"
+                android:hint="Jaideep"
+                android:padding="7dp"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/regpg_password"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="10dip"
+                android:background="#D5D6D7"
+                android:drawableRight="@drawable/password"
+                android:hint="......"
+                android:inputType="textPassword"
+                android:padding="7dp"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/regpg_mail"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="10dip"
+                android:background="#D5D6D7"
+                android:drawableRight="@drawable/email"
+                android:hint="Jaideep@symind.com"
+                android:padding="7dp"
+                android:textSize="16sp" />
+            
+            <EditText
+                android:id="@+id/regpg_phone"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="10dip"
+                android:background="#D5D6D7"
+                android:drawableRight="@drawable/email"
+                android:hint="Enter phone no"
+                android:padding="7dp"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/regpg_btn"
+                android:layout_width="140dip"
+                android:layout_height="50dip"
+                android:layout_marginLeft="85dip"
+                android:layout_marginTop="20dip"
+                android:background="#FE0001"
+                android:text="Register" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

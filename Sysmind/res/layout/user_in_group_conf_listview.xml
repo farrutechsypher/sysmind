@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    
+
+    
+  <!--    <TextView
+      android:id="@+id/adduser_username"
+      android:layout_width="60dp"
+      android:layout_height="wrap_content"
+      android:layout_gravity="left"
+      android:layout_marginRight="5dp"
+      android:gravity="center_horizontal|left"
+      android:text=""      
+      android:textColor="@color/CornflowerBlue"
+      android:textSize="28sp" 
+      />
+-->
+      <Button
+          android:id="@+id/addGroupConf_button"
+          android:layout_width="90dp"
+          android:layout_height="35dp"
+          android:layout_marginTop="5dp"
+          android:layout_marginBottom="5dp"
+          android:layout_marginLeft="23dp"
+          android:background="@drawable/login_btn"
+          android:textColor="@color/colour"
+          android:text="" />
+
+      <Button
+          android:id="@+id/addGroupConf_conf_button"
+         android:layout_width="90dp"
+          android:layout_height="35dp"
+          android:layout_alignBottom="@+id/adduser_button"
+            android:layout_marginTop="5dp"
+          android:layout_marginBottom="5dp"
+            android:background="@drawable/login_btn"
+               android:textColor="@color/colour"
+          android:layout_alignParentRight="true"
+          android:layout_marginRight="23dp"
+          android:text="Add" />
+       <!--   android:visibility="invisible"-->
+
+</RelativeLayout>

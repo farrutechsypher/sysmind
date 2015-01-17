@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top" >
+
+    <include layout="@layout/sysmind_background" />
+
+    <EditText
+        android:id="@+id/enter_cpg_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="156dp"
+        android:ems="10"
+        android:hint="@string/Enter_Code" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/enter_cpg_button"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/enter_cpg_editText"
+        android:layout_alignRight="@+id/enter_cpg_editText"
+        android:layout_below="@+id/enter_cpg_editText"
+        android:layout_marginTop="72dp"
+        android:background="@drawable/login_btn"
+        android:text="@string/Submit" />
+
+</RelativeLayout>

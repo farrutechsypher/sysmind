@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    
+ <include layout="@layout/sysmind_background"/>
+  <RelativeLayout
+        android:id="@+id/toplayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/topbgimage" >
+
+        <Button
+            android:id="@+id/homepg_backbtn"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/back1" />
+
+        <TextView
+            android:id="@+id/homepg_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/sysmind_contaqpg_imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="3dp"
+            android:layout_toLeftOf="@+id/homepg_logout_btn"
+            android:gravity="center_vertical"
+            android:src="@drawable/sysmind_icon" />
+
+        <Button
+            android:id="@+id/homepg_logout_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="2dp"
+            android:gravity="center_vertical"
+            android:text="@string/Logout"
+            android:textColor="@color/CornflowerBlue" />
+    </RelativeLayout>
+ 
+  <ListView
+      android:id="@+id/sysmind_home_page_listview"
+      android:layout_width="match_parent"
+      android:layout_height="300dp"
+      android:layout_marginTop="125dp"
+      android:layout_marginBottom="40dp" >
+      
+  </ListView>
+
+  <!-- <Button
+      android:id="@+id/sysmind_homepg_button"
+      android:layout_width="80dp"
+      android:layout_height="40dp"
+      android:background="@drawable/login_btn"
+      android:layout_alignParentBottom="true"
+      android:layout_centerHorizontal="true"
+      android:textSize="20sp"
+      android:textColor="@color/colour"
+      android:layout_marginBottom="16dp"
+      android:text="@string/Logout" /> -->
+ 
+</RelativeLayout>

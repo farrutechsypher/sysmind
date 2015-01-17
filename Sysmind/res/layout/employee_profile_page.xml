@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colour" >
+
+    <RelativeLayout
+        android:id="@+id/toplayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/topbgimage" >
+
+       <!--  <Button
+            android:id="@+id/empl_profpg_backbtn"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/back1" /> -->
+
+        <TextView
+            android:id="@+id/empl_profpg_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/empl_profpg_imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="3dp"
+            android:layout_toLeftOf="@+id/empl_profpg_logout_btn"
+            android:gravity="center_vertical"
+            android:src="@drawable/sysmind_icon" />
+
+        <Button
+            android:id="@+id/empl_profpg_logout_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="2dp"
+            android:gravity="center_vertical"
+            android:text="@string/Logout"
+            android:textColor="@color/CornflowerBlue" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/belowtop"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_below="@+id/toplayout"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/empl_profpg_empimageview"
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="40dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:id="@+id/empl_profpg_Layout1"
+            android:layout_width="150dp"
+            android:layout_height="2708dp"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/empl_profpg_connect"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/login_btn"
+                android:text="@string/connect"
+                android:textColor="@color/colour" />
+
+            <!--
+             <Button
+            android:id="@+id/empl_profpg_leavemsg"
+            android:layout_width="match_parent"
+             android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/CornflowerBlue"
+                 android:textColor="@color/colour"
+            android:text="@string/leaveamsg" />
+            -->
+
+            <Button
+                android:id="@+id/empl_profpg_addgroup"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/login_btn"
+                android:text="@string/AddtoGroup"
+                android:textColor="@color/colour" />
+
+            <Button
+                android:id="@+id/empl_profpg_email"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/login_btn"
+                android:text="@string/Email"
+                android:textColor="@color/colour" />
+
+            <Button
+                android:id="@+id/empl_profpg_resume"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/login_btn"
+                android:text="@string/Resume"
+                android:textColor="@color/colour" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/empl_profdetail_listview"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/belowtop" >
+    </ListView>
+
+</RelativeLayout>

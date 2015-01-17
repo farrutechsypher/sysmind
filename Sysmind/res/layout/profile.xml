@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colour" >
+
+    <RelativeLayout
+        android:id="@+id/lay_member"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="2dp" >
+
+        <RelativeLayout
+            android:id="@+id/toplayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/topbgimage" >
+
+            <Button
+                android:id="@+id/profile_backbtn"
+                android:layout_width="35dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="5dp"
+                android:background="@drawable/back1" />
+
+            <TextView
+                android:id="@+id/btn_addmemb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/Profile"
+                android:textColor="#ffffff"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+            
+              <Button
+            android:id="@+id/profile_logout_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="2dp"
+            android:gravity="center_vertical"
+            android:text="@string/Logout"
+            android:textColor="@color/CornflowerBlue" />
+        </RelativeLayout>
+
+        <TableLayout
+            android:id="@+id/toplayoutview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toplayout"
+            android:layout_margin="18dp" >
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="@string/Department"
+                    android:textColor="@color/CornflowerBlue"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <include layout="@layout/mergecolon" />
+
+                <Spinner
+                    android:id="@+id/spin_department"
+                    android:layout_width="104dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/CornflowerBlue"
+                    android:layout_weight="1.5" />
+            </TableRow>
+
+            <include layout="@layout/mergeview" />
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="@string/Location"
+                    android:textColor="@color/CornflowerBlue"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <include layout="@layout/mergecolon" />
+
+                <Spinner
+                    android:id="@+id/spin_location"
+                    android:layout_width="104dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                         android:textColor="@color/CornflowerBlue"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1.5" />
+            </TableRow>
+
+            <include layout="@layout/mergeview" />
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="@string/Profession"
+                    android:textColor="@color/CornflowerBlue"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <include layout="@layout/mergecolon" />
+
+                <Spinner
+                    android:id="@+id/spin_profession"
+                    android:layout_width="104dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="5dp"
+                     android:textColor="@color/CornflowerBlue"
+                    android:layout_weight="1.5" />
+            </TableRow>
+
+            <include layout="@layout/mergeview" />
+
+            <TableRow>
+
+                <!--
+           <TextView
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:textSize="15sp"
+            android:textStyle="bold"
+           android:textColor="@color/CornflowerBlue"
+            android:layout_gravity="center_vertical"
+    	    android:text="@string/Enter_Mailid" 
+    	    android:layout_weight="1"/>  
+            
+            <include layout="@layout/mergecolon"/>
+                -->
+
+
+                <!--
+            <EditText
+                android:id="@+id/prof_txt_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="@color/CornflowerBlue"
+                android:width="190dp" 
+                android:inputType="textEmailAddress"
+                
+                android:layout_weight="1.5">
+
+            </EditText>
+                -->
+
+            </TableRow>
+
+            <include layout="@layout/mergeview" />
+
+            <TableRow>
+
+                <ImageView
+                    android:id="@+id/prof_imageview"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="false"
+                    android:contentDescription="@string/cdimage"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/addbtm" />
+
+                <include layout="@layout/mergecolon" />
+
+                <Button
+                    android:id="@+id/prof_image_btn"
+                    android:layout_width="129dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.5"
+                    android:background="@drawable/login_btn"
+                    android:ems="10"
+                    android:gravity="left"
+                    android:text="@string/selectpic"
+                    android:textColor="@color/colour"
+                    android:width="100dp" />
+            </TableRow>
+
+            <include layout="@layout/mergeview" />
+
+            <TableRow>
+
+                <EditText
+                    android:id="@+id/prof_txt_resume"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:singleLine="true"
+                    android:textColor="@color/CornflowerBlue"
+                    android:width="190dp" >
+                </EditText>
+
+                <include layout="@layout/mergecolon" />
+
+                <Button
+                    android:id="@+id/prof_resume_btn"
+                    android:layout_width="129dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.5"
+                    android:background="@drawable/login_btn"
+                    android:ems="10"
+                    android:gravity="left"
+                    android:text="@string/selectresume"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/colour"
+                    android:width="100dp" />
+            </TableRow>
+
+            <include layout="@layout/mergeview" />
+
+            <Button
+                android:id="@+id/prof_btn_submit"
+                android:layout_width="129dp"
+                android:layout_height="40dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/login_btn"
+                android:text="@string/Submit"
+                android:textColor="@color/colour" />
+        </TableLayout>
+    </RelativeLayout>
+
+</ScrollView>

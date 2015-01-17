@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colour"
+  >
+ 
+     <RelativeLayout
+        android:background="@drawable/topbgimage"
+        android:id="@+id/toplayout"
+        android:layout_height="wrap_content" 
+        android:layout_width="fill_parent" >
+       <TextView 
+            android:id="@+id/department_user_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:text=""
+            android:layout_centerInParent="true"/>
+
+       <Button
+           android:id="@+id/department_user_logout_btn"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentRight="true"
+           android:layout_alignParentTop="true"
+           android:gravity="center_vertical"
+           android:layout_marginTop="2dp"
+           android:textColor="@color/CornflowerBlue"
+           android:text="@string/Logout" />
+
+       <ImageView
+           android:id="@+id/department_user_imageView"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentTop="true"
+           android:layout_toLeftOf="@+id/department_user_logout_btn"
+           android:gravity="center_vertical"
+           android:src="@drawable/sysmind_icon" />
+
+       <Button
+           android:id="@+id/department_user_backbtn"
+           android:layout_width="35dp"
+           android:layout_height="40dp"
+           android:layout_alignBottom="@+id/department_user_textview"
+           android:layout_alignParentLeft="true"
+           android:layout_margin="0dp"
+           android:background="@drawable/back1" />
+       
+       </RelativeLayout>
+
+    <Button
+        android:id="@+id/deptConnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/toplayout"
+        android:layout_marginTop="16dp"
+        android:text="Connect" />
+
+    <Button
+        android:id="@+id/deptAddgroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/deptConnect"
+        android:layout_alignBottom="@+id/deptConnect"
+        android:layout_alignParentRight="true"
+        android:text="Add Group" />
+
+</RelativeLayout>

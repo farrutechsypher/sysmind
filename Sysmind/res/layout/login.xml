@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    
+   
+    android:background="@android:color/white"
+    tools:context=".LoginPage" >
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/sysmind_background" />
+
+    <LinearLayout
+        android:id="@+id/edt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dip"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="23dp"
+       
+        android:padding="10dp" >
+
+        <EditText
+            android:id="@+id/logpg_username"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:background="#E9EBEA"
+            android:paddingLeft="15dp"
+            android:padding="7dp"
+               android:drawableRight="@drawable/username"
+            android:ems="10"
+            android:hint="@string/Enter_UserName"
+            android:textColor="@color/DarkBlue" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/logpg_password"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:background="#E9EBEA"
+            android:drawableRight="@drawable/password"
+            android:inputType="textPassword"
+            android:ems="10"
+           android:padding="7dip"
+            android:layout_marginTop="10dp"
+            android:hint="@string/Enter_Password"
+           
+            android:textColor="#00008B" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/logpg_btn"
+                android:layout_width="100dip"
+                android:layout_height="wrap_content"
+                android:padding="6dp"
+                android:background="#FFCB05"
+                android:text="@string/Login"
+                android:textColor="#00008B" />
+			<View 
+			    android:layout_width="0dp"
+			    android:layout_weight="1"
+			    android:layout_height="match_parent"/>
+            <Button
+                android:id="@+id/logpg_reg_btn"
+                android:layout_width="100dip"
+                android:layout_height="wrap_content"
+                android:background="#FE0001"
+                android:padding="6dp"
+                android:text="@string/Register"
+                android:textColor="#00008B" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

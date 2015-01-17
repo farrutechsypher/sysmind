@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colour" >
+
+    <RelativeLayout
+        android:id="@+id/toplayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/topbgimage" >
+
+        <Button
+            android:id="@+id/addGroupConf_backbtn"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/back1" />
+
+       
+        <Button
+            android:id="@+id/addGroupConf_logout_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="2dp"
+            android:gravity="center_vertical"
+            android:text="@string/Logout"
+            android:textColor="@color/CornflowerBlue" />
+
+         <TextView
+             android:id="@+id/addGroupConf_textview"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerInParent="true"
+             android:textColor="#ffffff"
+             android:textSize="15sp"
+             android:textStyle="bold" />
+ <!--  android:text="Add Group User" -->
+ 
+ 
+         <ImageView
+             android:id="@+id/sysmind_addGroupConf_imageView"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignTop="@+id/addGroupConf_backbtn"
+             android:layout_toLeftOf="@+id/addGroupConf_logout_btn"
+             android:gravity="center_vertical"
+             android:src="@drawable/sysmind_icon" />
+        
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listViewaddGroupConf"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginTop="120dp"
+        android:layout_alignParentRight="true" >
+
+    </ListView>
+<!--   <EditText android:id="@+id/inputSearch"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:hint="Search User.."
+        android:inputType="textVisiblePassword"/> -->
+
+    <Button
+        android:id="@+id/addallusers"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toplayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:textColor="@color/CornflowerBlue"
+        android:text="ADD ALL USERS" />
+  
+</RelativeLayout>

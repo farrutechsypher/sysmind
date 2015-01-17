@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colour"
+  >
+ 
+   
+     
+     
+     <RelativeLayout
+        android:background="@drawable/topbgimage"
+        android:id="@+id/toplayout"
+        android:layout_height="wrap_content" 
+        android:layout_width="fill_parent" >
+        
+         
+          <Button
+    	    android:id="@+id/sysmind_ppg_backbtn"
+    	    android:layout_width="35dp"
+    	    android:layout_height="30dp"
+    	    android:background="@drawable/back1"
+    	    android:layout_alignParentLeft="true"
+    	    android:layout_margin="5dp"
+    	    />
+       <TextView 
+            android:text="@string/Profession"
+            android:id="@+id/btn_addmemb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"/>
+
+       <ImageView
+           android:id="@+id/sysmind_ppg_imageView"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentTop="true"
+           android:layout_toLeftOf="@+id/sysmind_ppg_logout_btn"          
+            android:gravity="center_vertical"
+           android:layout_marginTop="3dp"
+           android:src="@drawable/sysmind_icon" />
+
+       <Button
+           android:id="@+id/sysmind_ppg_logout_btn"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentRight="true"
+           android:layout_alignParentTop="true"
+           android:gravity="center_vertical"
+           android:layout_marginTop="2dp"
+         android:textColor="@color/CornflowerBlue"
+           android:text="@string/Logout" />
+       <!--    android:textColor="@color/CornflowerBlue" -->
+       
+       </RelativeLayout>
+       
+     <ListView
+      android:id="@+id/sysmind_profession_pg_listview"
+      android:layout_width="match_parent"
+      android:layout_height="300dp"
+      android:layout_marginTop="125dp"
+      android:layout_marginBottom="40dp">
+      
+  </ListView>
+
+</RelativeLayout>

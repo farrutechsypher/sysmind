@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colour" >
+
+    <RelativeLayout
+        android:id="@+id/toplayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/topbgimage" >
+
+        <Button
+            android:id="@+id/usergrp_backbtn"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/back1" />
+
+        <TextView
+            android:id="@+id/usergrp_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:text="My Groups"
+            android:textStyle="bold" />
+
+        <Button
+           android:id="@+id/grp_user_logout_btn"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentRight="true"
+           android:layout_alignParentTop="true"
+           android:gravity="center_vertical"
+           android:layout_marginTop="2dp"
+           android:textColor="@color/CornflowerBlue"
+           android:text="@string/Logout" />
+
+    
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/usergrp_listView"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/toplayout"
+        android:layout_marginTop="50dp" >
+    </ListView>
+
+    </RelativeLayout>
